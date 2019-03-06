@@ -9,8 +9,8 @@ export class LoginService implements CanActivate {
         private router: Router,
         private http: Http
     ) {}
-    AdminCreateURL = 'http://localhost:3000/admin/create';
-    AdminLoginURL  = 'http://localhost:3000/admin/login';
+    AdminCreateURL = 'https://www.royalfitnessclub.in/admin/create';
+    AdminLoginURL  = 'https://www.royalfitnessclub.in/admin/login';
 
 
     public login(userName: string, password: string) {
