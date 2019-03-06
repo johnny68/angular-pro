@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/Royal-Gym'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/Royal-Gym/index.html'));
+res.sendFile(path.join(__dirname+'/dist/royalgym/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
