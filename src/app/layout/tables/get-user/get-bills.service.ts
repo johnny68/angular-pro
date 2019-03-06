@@ -3,7 +3,7 @@ import { Http, RequestOptions, Headers } from '@angular/http';
 
 @Injectable()
 export class GetBillsService {
-    private url = 'http://localhost:3000/user/get/billing';
+    private url = 'https://royalfitnessclub.in/user/get/billing';
 
     constructor(private http: Http) { }
 
