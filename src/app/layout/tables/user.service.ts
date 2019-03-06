@@ -3,8 +3,8 @@ import { Http, RequestOptions, Headers } from '@angular/http';
 
 @Injectable()
 export class UserTableService {
-    private url = 'http://localhost:3000/user/getAll';
-    private get_specific_url = 'http://localhost:3000/users/get';
+    private url = 'https://royalfitnessclub.in/user/getAll';
+    private get_specific_url = 'https://royalfitnessclub.in/users/get';
 
     constructor(private http: Http) { }
 
