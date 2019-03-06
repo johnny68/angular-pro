@@ -11,6 +11,7 @@ import { UserTableService } from './user.service';
 })
 export class TablesComponent implements OnInit {
     public users: object[];
+    p;
 
     constructor(private router: Router,
         private service: UserTableService) {}

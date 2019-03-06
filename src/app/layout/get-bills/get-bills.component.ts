@@ -15,6 +15,7 @@ export class GetBillsComponent implements OnInit {
   user_due_date = '';
   user_bills: any[];
   billing_times: any[];
+  p;
 
   constructor(
     private activatedRoute: ActivatedRoute,

@@ -21,6 +21,7 @@ export class MakePaymentComponent implements OnInit {
   dueDate;
   previousDueDate;
   dueDateData;
+  p;
   constructor(
     private service: MakePaymentService,
     private router: Router,

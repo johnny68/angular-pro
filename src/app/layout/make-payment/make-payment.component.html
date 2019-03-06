@@ -14,7 +14,7 @@
         </tr>
       </thead>
       <tbody>
-        <ng-container *ngFor="let data of datas; let index = index">
+        <ng-container *ngFor="let data of datas | paginate: { itemsPerPage: 15, currentPage: p }; let index = index; ">
           <tr (click)="gotoUser(data)">
             <td>{{data.user_id}}</td>
             <td>{{data.user_name}}</td>
@@ -61,7 +61,7 @@
                       <h4>Total Amount to be paid by customer : <b>{{totalAmount}}</b></h4>
                     </div>
                     <div>
-                        <button (click)="onSave()" style="margin-right: 20px;" class="btn btn-success">Confirm Payment</button>
+                      <button (click)="onSave()" style="margin-right: 20px;" class="btn btn-success">Confirm Payment</button>
                     </div>
                   </div>
                 </div>
@@ -70,6 +70,7 @@
           </tr>
         </ng-container>
       </tbody>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </table>
   </div>
 </div>
