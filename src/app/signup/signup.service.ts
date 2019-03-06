@@ -7,7 +7,7 @@ export class SignupService {
     constructor(
         private http: Http
     ) {}
-    AdminCreateURL = 'http://localhost:3000/admin/create';
+    AdminCreateURL = 'https://www.royalfitnessclub.in/admin/create';
 
     public createAdmin(userName: string, password: string, name: string, emailID: string) {
         const body = {
