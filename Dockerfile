@@ -1,4 +1,4 @@
-# Create image based on the official Node LTS image from dockerhub
+# Create image based on the official
 FROM node:10-alpine
 
 # Create a directory where our app will be placed
