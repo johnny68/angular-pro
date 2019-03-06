@@ -3,8 +3,8 @@ import { Http, RequestOptions, Headers } from '@angular/http';
 
 @Injectable()
 export class MakePaymentService {
-    private url = 'http://localhost:3000/search';
-    private payment_url = 'http://localhost:3000/payment';
+    private url = 'https://royalfitnessclub.in/search';
+    private payment_url = 'https://royalfitnessclub.in/payment';
 
     constructor(private http: Http) { }
 
