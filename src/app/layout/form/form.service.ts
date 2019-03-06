@@ -3,8 +3,8 @@ import { Http, RequestOptions, Headers } from '@angular/http';
 
 @Injectable()
 export class FormService {
-    private createUrl = 'http://localhost:3000/user/create';
-    private billUrl = 'http://localhost:3000/user/billing/first';
+    private createUrl = 'https://royalfitnessclub.in/user/create';
+    private billUrl = 'https://royalfitnessclub.in/user/billing/first';
 
     constructor(private http: Http) { }
     public post(
